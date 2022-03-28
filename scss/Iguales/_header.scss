@@ -4,14 +4,12 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background-color: red;
-
     &__imagen{
+        margin-top: -76px;
         position: relative;
          width: 100%;
          height: 100%;
          overflow: hidden;
-         background-color: red;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,6 +34,22 @@
             color: #fff;
             font-family: $font-Titulo;
             font-size:map-get($tamaños, titulos );
+            animation-name: aparecer;
+            animation-duration: 1.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+        }
+        @keyframes aparecer {
+            0%{
+                transform: translateY(-1000px);
+            }
+            50%{
+                transform: translateY(-500px);
+            }
+            75%{
+                transform: translateY(0px);
+            }
+
         }
         &__p{
             position: relative;
@@ -46,6 +60,10 @@
             font-weight: 400;
             color: map-get($paleta, resalta );
             text-shadow: 20px 0px 15px rgb(0, 0, 0), -20px 0px 15px rgb(0, 0, 0);
+            animation-name: aparecer;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
 
         }
     }
@@ -53,7 +71,39 @@
     &__navbar{
         &__logo{
             width: 50px;
+            border-radius: 50%;
         }
+       
     }
 
+}
+.navbar-nav{
+    position: relative;
+    z-index: 2;
+
+    
+}
+.navbar-dark .navbar-nav .nav-link{
+     margin: 5px;
+
+    &:hover, &:active{
+     border-bottom: solid 1px map-get($paleta, texto);
+     padding-top:  5px;
+
+    }
+}
+
+.navbar-brand{
+    position: relative;
+    z-index: 2;
+}
+.navbar-toggler{
+    position: relative;
+    z-index: 2; 
+}
+
+@include mediaquerydesktop{
+    .header__imagen{
+        margin-top: 0;
+    }
 }

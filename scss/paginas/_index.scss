@@ -1,6 +1,60 @@
 
 
+
+.videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    @include mediaquerydesktop{
+        height: 950px;
+    }
+    @include mediaquerytablet{
+        height: 1400px;
+    
+    }
+    h2{
+        margin-top: 50px;
+        font-weight: 100;
+        font-size: map-get($tamaños, subtitulos );
+        color: map-get($paleta, texto);
+       border-bottom: solid 1px map-get($paleta, resalta );
+       
+    }
+    &__articulo{
+       margin: 20px;
+       width: 100%;
+       height: 80%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       @include mediaquerytablet{
+         flex-direction: column;
+         flex-wrap: nowrap;
+         margin-top: 10px;
+         align-items: center;
+         height: 90%;
+       }
+       &__video{
+           width: 300px;
+           object-fit: cover;
+           height: 400px;
+           &:hover{
+               transform: scale(1.1);
+           }
+       }
+      
+
+    }
+}
 .somos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
     p{
         color: map-get($paleta, texto );
     }
