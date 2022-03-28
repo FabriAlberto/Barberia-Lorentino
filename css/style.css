@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  background-color: #111111; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: red; }
+  .header__imagen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .header__imagen::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      filter: brightness(0.2);
+      background-image: url(../../imagenes/barber.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .header__imagen__h1 {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      font-family: "Rochester", cursive;
+      font-size: 4rem; }
+    .header__imagen__p {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #80421B;
+      text-shadow: 20px 0px 15px black, -20px 0px 15px black; }
+  .header__navbar__logo {
+    width: 50px; }
+
+.somos p {
+  color: #acacac; }

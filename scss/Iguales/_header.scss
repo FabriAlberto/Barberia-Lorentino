@@ -1,0 +1,59 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+
+    &__imagen{
+        position: relative;
+         width: 100%;
+         height: 100%;
+         overflow: hidden;
+         background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            filter: brightness(.2);
+            background-image: url(../../imagenes/barber.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__h1{
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            font-family: $font-Titulo;
+            font-size:map-get($tamaños, titulos );
+        }
+        &__p{
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            font-family: $font-Texto;
+            font-size: map-get($tamaños, texto );
+            font-weight: 400;
+            color: map-get($paleta, resalta );
+            text-shadow: 20px 0px 15px rgb(0, 0, 0), -20px 0px 15px rgb(0, 0, 0);
+
+        }
+    }
+    
+    &__navbar{
+        &__logo{
+            width: 50px;
+        }
+    }
+
+}

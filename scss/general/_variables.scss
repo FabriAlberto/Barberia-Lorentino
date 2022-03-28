@@ -1,0 +1,43 @@
+%flex-columnCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+$font-Titulo: 'Rochester', cursive;
+$font-Texto:  'Montserrat', sans-serif;
+
+$tamaños:(
+    titulos:4rem,
+    subtitulos:2.5rem,
+    texto:1.8rem,
+);
+
+$paleta:(
+ blanco:#fff,
+ negro:#111111,
+ texto:#acacac,
+ resalta:#80421B,
+
+); 
+
+
+
+
+
+@mixin mediaquerydesktop{
+    @media only screen and (max-width:991px){
+        @content;
+    }
+}
+@mixin mediaquerytablet{
+    @media only screen and (max-width:822px){
+        @content;
+    }
+}
+
+@mixin mediaquerymobile{
+    @media only screen and (max-width:576px){
+        @content;
+    }
+}
