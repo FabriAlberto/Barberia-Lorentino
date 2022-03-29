@@ -70,6 +70,13 @@
         margin-right: 20px;
         font-size: map-get($tamaños, texto);
         }
+        &__h2{
+            margin-left: 10px;
+            color: map-get($paleta, texto );
+
+            border-bottom:1px solid #80421B;
+
+        }
     }
     &__article{
       width: 50%;
@@ -101,6 +108,7 @@
         margin-top: 80px;
         &:hover{
             @extend %hoverNeon;
+            color: map-get($paleta, texto);
         }
     
     }
@@ -113,6 +121,96 @@
     &__fas{
         color: map-get($paleta, blanco);
         font-size: 2rem;
+
+    }
+}
+.servicios{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    &__article1{
+      width: 50%;
+      padding: 20px;
+      @extend %flex-columnCenter;
+      
+      h2{
+          color: map-get($paleta, texto );
+      }
+      p{
+        color: map-get($paleta, texto );
+        padding:40px;
+      }
+      &__boton{
+          text-decoration: none;
+          padding: 10px;
+          background-color: map-get($paleta, resalta);
+          color: map-get($paleta, blanco );
+          &:hover{
+            box-shadow: 0 0 10px #80421B, 0 0 30px#80421B, 0r 0 60px #80421B;
+            transition-delay: .1s;
+            color: map-get($paleta, texto);
+          }
+      }
+    }
+    &__article2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      &__cont{
+          height: 50px;
+          width: 50px;
+          padding: 10px;
+          border-radius: 50%;
+          border: solid 1px grey;
+          margin-top:50px;
+      }
+    }
+    
+}
+.equipo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+
+    &__section1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        background-color: map-get($paleta, blanco);
+       &__article1{
+           width: 50%;
+           height: 100%;
+           @extend %flex-columnCenter;
+           &__h2{
+               color: map-get($paleta, negro );
+               font-size: map-get($tamaños, subtitulos);
+               font-weight: 100;
+           }
+           .contenedor__img{
+               height: 300px;
+               width: 500px;
+           }
+           &__img{
+               object-fit: cover;
+               width: 100%;
+               height: 100%
+           }
+       }
+       &__article2{
+        @extend %flex-columnCenter;
+        width: 50%;
+        height:100%;
+        &__p{
+            padding: 15px;
+             color: map-get($paleta, texto );
+        }
+
+       }
 
     }
 }

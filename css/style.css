@@ -1,4 +1,4 @@
-.banner__horario, .banner__ubicacion {
+.banner__horario, .banner__ubicacion, .servicios__article1, .equipo__section1__article1, .equipo__section1__article2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,8 @@
   border: 0; }
 
 body {
-  background-color: #111111; }
+  background-color: #111111;
+  font-family: "Montserrat", sans-serif; }
 
 .header {
   display: flex;
@@ -158,6 +159,10 @@ body {
       padding: 10px;
       margin-right: 20px;
       font-size: 1rem; }
+    .somos__article2__h2 {
+      margin-left: 10px;
+      color: #acacac;
+      border-bottom: 1px solid #80421B; }
   .somos__article {
     width: 50%; }
     .somos__article__img {
@@ -183,6 +188,76 @@ body {
     color: #fff;
     text-align: end;
     margin-top: 80px; }
+    .banner a:hover {
+      color: #acacac; }
   .banner__fas {
     color: #fff;
     font-size: 2rem; }
+
+.servicios {
+  margin-top: 100px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .servicios__article1 {
+    width: 50%;
+    padding: 20px; }
+    .servicios__article1 h2 {
+      color: #acacac; }
+    .servicios__article1 p {
+      color: #acacac;
+      padding: 40px; }
+    .servicios__article1__boton {
+      text-decoration: none;
+      padding: 10px;
+      background-color: #80421B;
+      color: #fff; }
+      .servicios__article1__boton:hover {
+        box-shadow: 0 0 10px #80421B, 0 0 30px #80421B, 0r 0 60px #80421B;
+        transition-delay: .1s;
+        color: #acacac; }
+  .servicios__article2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column; }
+    .servicios__article2__cont {
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+      border-radius: 50%;
+      border: solid 1px grey;
+      margin-top: 50px; }
+
+.equipo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1000px; }
+  .equipo__section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #fff; }
+    .equipo__section1__article1 {
+      width: 50%;
+      height: 100%; }
+      .equipo__section1__article1__h2 {
+        color: #111111;
+        font-size: 2.5rem;
+        font-weight: 100; }
+      .equipo__section1__article1 .contenedor__img {
+        height: 300px;
+        width: 500px; }
+      .equipo__section1__article1__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
+    .equipo__section1__article2 {
+      width: 50%;
+      height: 100%; }
+      .equipo__section1__article2__p {
+        padding: 15px;
+        color: #acacac; }
