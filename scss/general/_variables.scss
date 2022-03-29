@@ -10,7 +10,7 @@ $font-Texto:  'Montserrat', sans-serif;
 $tamaños:(
     titulos:4rem,
     subtitulos:2.5rem,
-    texto:1.8rem,
+    texto:1rem,
 );
 
 $paleta:(
@@ -20,6 +20,11 @@ $paleta:(
  resalta:#80421B,
 
 ); 
+%hoverNeon{
+    box-shadow: 0 0 10px #131313, 0 0 30px #131313, 0 0 60px #131313;
+    transition-delay: .1s;
+
+}
 
 
 

@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 700px;
+    height: 600px;
     @include mediaquerydesktop{
         height: 950px;
     }
@@ -42,6 +42,7 @@
            width: 300px;
            object-fit: cover;
            height: 400px;
+           margin: 15px;
            &:hover{
                transform: scale(1.1);
            }
@@ -53,9 +54,65 @@
 .somos{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 500px;
-    p{
+    height: 600px;
+    box-shadow: 15px 10px 30px  #000;
+    
+  
+    &__article2{
+        width: 50%;
+        &__p{
         color: map-get($paleta, texto );
+        width: 100%;
+        padding: 10px;
+        margin-right: 20px;
+        font-size: map-get($tamaños, texto);
+        }
+    }
+    &__article{
+      width: 50%;
+      &__img{
+        width:100%;
+        padding: 20px;
+      }
+    }
+}
+.banner{
+    height: 150px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: map-get($paleta, resalta);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    p{
+        color: map-get($paleta, blanco );
+        font-size: map-get($tamaños, texto)
+    }
+    a{
+        text-decoration: none;
+        padding:10px;
+        background-color: map-get($paleta, negro );
+        color:map-get($paleta, blanco );
+        text-align: end;
+        margin-top: 80px;
+        &:hover{
+            @extend %hoverNeon;
+        }
+    
+    }
+    &__horario{
+        @extend %flex-columnCenter;
+    }
+    &__ubicacion{
+        @extend %flex-columnCenter;
+    }
+    &__fas{
+        color: map-get($paleta, blanco);
+        font-size: 2rem;
+
     }
 }
