@@ -1,4 +1,4 @@
-.banner__horario, .banner__ubicacion, .servicios__article1, .equipo__section1__article1, .equipo__section1__article2 {
+.spotify, .banner__horario, .banner__ubicacion, .servicios__article1, .equipo__section1__article1, .equipo__section1__article2, .equipo2__article1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,6 +100,10 @@ body {
 @media only screen and (max-width: 991px) {
   .header__imagen {
     margin-top: 0; } }
+
+.spotify {
+  width: 100%;
+  height: 150px; }
 
 .videos {
   display: flex;
@@ -233,7 +237,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1000px; }
+  height: 1100px; }
   .equipo__section1 {
     display: flex;
     flex-direction: row;
@@ -250,14 +254,100 @@ body {
         font-weight: 100; }
       .equipo__section1__article1 .contenedor__img {
         height: 300px;
-        width: 500px; }
+        width: 460px; }
       .equipo__section1__article1__img {
         object-fit: cover;
         width: 100%;
-        height: 100%; }
+        height: 90%; }
     .equipo__section1__article2 {
       width: 50%;
       height: 100%; }
       .equipo__section1__article2__p {
         padding: 15px;
         color: #acacac; }
+  .equipo2 {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    background-image: url(../../imagenes/Diego-Boca-BLANCO-Y-NEGRO.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    background-position-x: left; }
+    .equipo2__div {
+      width: 50%;
+      height: 100%;
+      background-color: #111111;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+    .equipo2__article1 {
+      height: 280px;
+      width: 280px;
+      background-color: #fff;
+      margin: 10px; }
+      .equipo2__article1__img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%; }
+      .equipo2__article1__h3 {
+        font-size: 2.5rem;
+        color: #acacac;
+        font-weight: 100; }
+      .equipo2__article1__p {
+        font-size: 1rem;
+        color: #acacac; }
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  box-shadow: -1px -5px 5px 1px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px -5px 5px 1px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px -5px 5px 1px rgba(0, 0, 0, 0.65); }
+  .footer__redes {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; }
+    .footer__redes__facebook {
+      background-color: #000;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      text-decoration: none;
+      align-items: center;
+      border: 1px solid #80421B;
+      box-shadow: 10px 10px 1px #80421B;
+      transition: .5s; }
+      .footer__redes__facebook:hover {
+        background-color: #3b5998;
+        border: none;
+        box-shadow: none;
+        border-radius: 15px; }
+      .footer__redes__facebook .fa-facebook-f, .footer__redes__facebook .fa-instagram, .footer__redes__facebook .fa-youtube {
+        font-size: 2em;
+        color: #fff; }
+    .footer__redes .instagram:hover {
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 15px; }
+    .footer__redes .youtube:hover {
+      background-color: #c4302b; }
+  .footer__ubicacion {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; }
